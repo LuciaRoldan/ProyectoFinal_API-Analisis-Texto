@@ -1,0 +1,5 @@
+flask~=1.1.2
+multi-rake
+gunicorn
+Markdown~=3.3
+html2text~=2020.1.16
