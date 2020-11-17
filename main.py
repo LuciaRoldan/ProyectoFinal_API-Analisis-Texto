@@ -520,7 +520,7 @@ def keywords():
 
     html = markdown.markdown(text_es)
     plain_text = html2text.html2text(html)
-    plain_text = re.sub('[!@·•*\[\]/#$]', '', plain_text)
+    plain_text = re.sub('[!@·_•*\[\]/#$]', '', plain_text)
     plain_text = plain_text.replace('\\n', '. ')
     plain_text = re.sub(r'http\S+', '', plain_text, flags=re.MULTILINE)
     plain_text = re.sub(r'www\S+', '', plain_text, flags=re.MULTILINE)
@@ -1074,7 +1074,7 @@ def hashtags():
 
     html = markdown.markdown(text_es)
     plain_text = html2text.html2text(html)
-    plain_text = re.sub('[!@·•*\[\]/#$]', '', plain_text)
+    plain_text = re.sub('[!@·_•*\[\]/#$]', '', plain_text)
     plain_text = plain_text.replace('\\n', '. ')
     plain_text = re.sub(r'http\S+', '', plain_text, flags=re.MULTILINE)
     plain_text = re.sub(r'www\S+', '', plain_text, flags=re.MULTILINE)
